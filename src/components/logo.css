@@ -1,0 +1,19 @@
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Allows interaction with elements below */
+    z-index: 0; /* Positioned behind other content */
+    overflow: hidden;
+    
+  }
+  
+  .logo-image {
+    max-width: 100%; /* Adjust size to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    scale: 25%;
+  }
+  

@@ -1,0 +1,162 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slopeBegin, .slopeEnd {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1; 
+  }
+  
+  .slopeBegin {
+    background-color: #000;
+    clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%);
+  }
+  
+  .slopeEnd {
+    background-color: #000;
+    clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+  }
+  
+  .text {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2; 
+  }
+  
+  .number {
+    font-size: 40px;
+    color: #fff;
+  }
+  
+  .pink {
+    background: linear-gradient(to right, #5CC4B1 0%, #5EBDD1 100%);
+  }
+  
+  .teal {
+    background: linear-gradient(to right, #37E4AA 0%, #5CC4B1 100%);
+  }
+  
+  .tomato {
+    background: linear-gradient(to right, #1E5A68 0%, #50AFA2 100%);
+  }
+  .nextButtonContainer {
+    position: absolute;
+    bottom: 20px;  /* Space from the bottom */
+    left: 50%;     /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 10;   /* Ensure the button is on top */
+    width: 100%;   /* Full width for the button container */
+    text-align: center; /* Center the button text */
+    scale: 120%;
+  }
+  /* styles.module.css */
+
+.logo{
+    width: px;
+    align-items: center;
+    z-index: 1;
+}
+  
+
+.pageTextContainer {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+  height: 100vh; /* Full viewport height */
+  padding: 0 20px; /* Optional: Add padding if needed */
+  margin-left: 200px; /* Shift contents to the right by 100px */
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.pageText {
+  font-size: 1.1rem;
+  max-width: 50%; /* Ensure the text does not overflow */
+  text-align: center; /* Center text inside the container */
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align to the left within the image container */
+  margin-left: 100px; /* Space between text and image */
+}
+
+.image {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+}
+.Options{
+  position: absolute;
+ top: 40%;
+  left: 60%;     /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 10;   /* Ensure the button is on top */
+  width: 100%;   /* Full width for the button container */
+  text-align: center; /* Center the button text */
+  scale: 120%;
+  margin: 40px;
+}
+.test{
+    z-index: 10000;
+  }
+  .header1 {
+    position: absolute; /* Position it absolutely within the parent container */
+    top: 180px; /* Adjust this value as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment adjustment */
+    color: #fff; /* Match color or adjust as needed */
+    font-size: 2rem; /* Adjust font size */
+    z-index: 1; /* Ensure it's above other elements */
+    text-align: center; /* Center align the text */
+    width: 100%; /* Ensure full-width alignment */
+    padding: 20px; /* Add padding as needed */
+  
+  }
+  .header2{
+    position: absolute; /* Position it absolutely within the parent container */
+    top: 150px; /* Adjust this value as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment adjustment */
+    color: #fff; /* Match color or adjust as needed */
+    font-size: 2rem; /* Adjust font size */
+    z-index: 1; /* Ensure it's above other elements */
+    text-align: center; /* Center align the text */
+    width: 100%; /* Ensure full-width alignment */
+    padding: 20px; /* Add padding as needed */
+  
+  }
+  
+  /* Add these styles to your styles.module.css */
+.paragraph-container {
+  transition: all 0.3s ease;
+}
+
+.paragraph-container.hovered {
+  /* Styles for when the container is hovered */
+  /* Example: */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  transition: opacity 0.3s ease;
+}
+
+.show-image {
+  /* Styles for when the image should be shown */
+  opacity: 1;
+}
+
+.image.hidden {
+  opacity: 0;
+}
