@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Preloader from "./Preloader";
 import Header from './components/Header';
 import Backgroundtwo from "./components/BackgroundTwo";
-import Options from "./components/options";
 import Test from './components/test';
 import './App.css';
 import Appcontent from "./Appcontent";
@@ -41,7 +40,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4500); // Adjust the duration as needed
+    }, 4500); 
 
     return () => clearTimeout(timer);
   }, []);
